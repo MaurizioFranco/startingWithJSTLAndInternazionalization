@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>User table</h2>
+<!-- ../userInsert means that we map this method to one directory up (WebContent) -->
+<form action="../userInsert" method="get">
+  
+  Email:<br>
+  <input type="email" name="email" value="">
+  <br><br>
+  password:<br>
+  <input type="password" name="password" value="">
+  <br><br>
+  First name:<br>
+  <input type="text" name="firstname" value="">
+  <br><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="">
+  <br><br>
+  Date of birth:<br>
+  <input type="date" name="dateofbirth" value="">
+  <br><br>
+  Role:<br>
+   <select name="role">
+  <option value="1">Role 1</option>
+  <option value="2">Role 2</option>
+  <option value="3">Role 3</option>
+  <option value="4">Role 4</option>
+  <option value="5">Role 5</option>
+  <option value="6">Role 6</option>
+  <option value="7">Role 7</option>
+  <option value="8">Role 8</option>
+  <option value="9">Role 9</option>
+</select> 
+  <br><br>
+  Image path:<br>
+  <input type="text" name="imgpath" value="">
+  <br><br>
+  Note:<br>
+<!--   <input type="text" name="note" value=""> -->
+<!--   <br><br> -->
+   <textarea type="text" name="note" value="" rows="3" cols="30">
+
+	</textarea> 
+	<br><br>
+<!-- 	 Enabled:<br> -->
+<!--   <input type="number" name="enabled" value=""> -->
+<!--   <br><br> -->
+  Enabled:<br>
+ <select name="enabled">
+  <option value="1">Yes</option>
+  <option value="0">No</option>
+</select> 
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "../userInsert".</p>
+
+</body>
+</html>
